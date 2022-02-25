@@ -162,7 +162,7 @@
         }
         /* MAIN-CONTENT START */
         .main-content{
-            /* margin-bottom */
+            margin-bottom : 2em;
         }
         .main-content .sec-tit{
             display: none;
@@ -219,6 +219,44 @@
         /* MAIN-CONTENT END */
 
         /* SUB-CONTENT START */
+        .sub-content .gallery,
+        .sub-content .banner,
+        .sub-content .shortcuts{
+            display: none;
+        }
+
+        .sub-content .sec-tit{
+            display: none;
+        }
+        .sub-content .notice-gallery{
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+        .notice-gallery .art{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+        }
+        .sub-tit{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50%;
+            /* padding:  */
+            background-color: #fff;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .notice-list{
+            padding-top: 2em;
+        }
+        .notice-list ul{
+            display: grid;
+            grid-template-columns: 2fr 7fr 4fr 3fr 3fr;
+        }
 
         /* SUB-CONTENT END */
 
@@ -337,8 +375,8 @@
 
         <section class="sec sub-content">
             <div class="container">
-                <div class="inner">
-                    <h2 class="sec-tit">공지사항,갤러리,배너,바로가기</h2>
+                <h2 class="sec-tit">공지사항,갤러리,배너,바로가기</h2>
+                <div class="notice-gallery">
                     <article class="art notice">
                         <h3 class="sub-tit">공지사항</h3>
                         <ul class="notice-list">
@@ -391,12 +429,11 @@
                                 <ul class="notice-txt">
                                     <li>20</li>
                                     <li><a href="#">notice's name</a></li>
-                                    <li>관리자</li>
                                     <li>2021-11-24</li>
+                                    <li>관리자</li>
                                     <li>52</li>
                                 </ul>
                             </li>
-
                         </ul>
                     </article>
 
@@ -420,26 +457,27 @@
                             </li>
                         </ul>
                     </article>
+                </div>
 
-                    <div class="art banner">
-                        <div class="inner">
-                            <h3 class="sub-tit">배너</h3>
-                            <div class="img-box">
-                                <a href="#"><img src="./images/img-banner1.png" alt="네이버페이" title="네이버페이 바로가기"></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="art shortcuts">
-                        <div class="inner">
-                            <h3 class="sub-tit">바로가기</h3>
-                            <a href="#">Q&A</a>  
-                            <a href="#">REVIEW</a>
-                            <a href="#">EVENT</a>
-                            <a href="#">배송조회</a>
+                <div class="banner">
+                    <div class="inner">
+                        <h3 class="sub-tit">배너</h3>
+                        <div class="img-box">
+                            <a href="#"><img src="./images/img-banner1.png" alt="네이버페이" title="네이버페이 바로가기"></a>
                         </div>
                     </div>
                 </div>
+
+                <div class="shortcuts">
+                    <div class="inner">
+                        <h3 class="sub-tit">바로가기</h3>
+                        <a href="#">Q&A</a>  
+                        <a href="#">REVIEW</a>
+                        <a href="#">EVENT</a>
+                        <a href="#">배송조회</a>
+                    </div>
+                </div>
+                
             </div>
         </section>
 
